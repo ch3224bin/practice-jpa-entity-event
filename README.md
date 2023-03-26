@@ -81,7 +81,7 @@ java.util.ConcurrentModificationException
 
 ### 4. 결론
 
-Entity Event를 받아 처리하는 곳은 기존 트랜잭션과 분리되어야 합니다.  
+Entity Event를 받아 처리하는 곳은 Entity 수정이 발생하는 곳과 트랜잭션이 분리되어야 합니다.  
 Entity Event를 받아 처리한다는 것 자체가 의존성을 분리시키겠다는 의도이기도 하므로, 트랜잭션이 분리되어도 상관없다고 생각이 듭니다.  
 같은 트랙잭션 내에서 사용하는 경우는 어떤 경우가 있을지 깊게 생각은 안해봤습니다.
 
